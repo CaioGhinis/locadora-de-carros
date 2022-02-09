@@ -1,0 +1,290 @@
+
+
+
+
+#navbar{
+    background-color: black;
+    height: 120px;
+}
+
+.navbar-nav{
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-nav li a{
+    color: white;
+    display: flex;
+}
+
+
+
+
+.fixedButton{
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    padding: 20px;
+}
+.roundedFixedBtn{
+  height: 60px;
+  line-height: 55px;  
+  width: 60px;  
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+/*slider*/
+
+.img-1{
+    background-image: url(/img/audi.jpg);
+}
+
+.img-2{
+    background-image: url(/img/camaro.jpg);
+}
+
+.img-3{
+    background-image: url(/img/hyundai.jpg);
+}
+
+.img-4{
+    background-image: url(/img/ford.jpg);
+}
+
+.carousel-item img{
+    height: 910px;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(50%);
+    display: flex;
+}
+
+.carousel-caption{
+    top: 40%;
+}
+
+.carousel-caption h5{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.carousel-caption p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+hr{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid white;
+}
+
+/* col carros*/
+
+.container h3{
+    margin: 50px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.imagem-1{
+    background-image: url(/img/audi-2.jpg);
+}
+
+.imagem-2{
+    background-image: url(/img/bmw.jpg);
+}
+
+.imagem-3{
+    background-image: url(/img/mercedes.jpg);
+}
+
+.imagem-4{
+    background-image: url(/img/tesla.jpg);
+}
+
+.imagem-5{
+    background-image: url(/img/nissan.jpg);
+}
+
+.imagem-6{
+    background-image: url(/img/mini.jpg);
+}
+
+.imagem-1,
+.imagem-2,
+.imagem-3,
+.imagem-4,
+.imagem-5,
+.imagem-6 {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 280px;
+	transform: scale(1);
+	transition: .25s ;
+    cursor: pointer;
+}
+
+.imagem-1:hover,
+.imagem-2:hover,
+.imagem-3:hover,
+.imagem-4:hover,
+.imagem-5:hover,
+.imagem-6:hover{
+	transform: scale(1.05);
+}
+
+.car-title{
+    margin-top: 10px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.cars-container p{
+    color: rgb(146, 143, 143);
+    margin-bottom: 20px;
+}
+
+/*why choose us*/
+
+.title{
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    top: -400px;
+}
+
+.gray-content{
+    background-color: black;
+    margin-top: 60px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.gray-content .col-md-4{
+    margin-top: 180px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid white;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-md-4 i{
+    color: white;
+}
+
+.col-md-4 .title-1{
+    margin-top: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.col-md-4 .parag-1{
+    color: rgb(139, 136, 136);
+}
+
+/*questions*/
+
+#accordion{
+    margin-bottom: 50px;
+}
+
+.title-1{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.accordion{
+    max-width: 800px;
+}
+
+.accordion .contentBx{
+    position: relative;
+    margin: 10px 20px;
+}
+
+.accordion .contentBx .label{
+    position: relative;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.accordion .contentBx .label::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.accordion .contentBx.active .label::before{
+    content: '-';
+}
+
+.accordion .contentBx .content{
+    position: relative;
+    background: white;
+    height: 0;
+    overflow: hidden;
+    transform: 0.5s;
+    overflow-y: auto;
+    color: rgb(119, 116, 116);
+}
+
+.accordion .contentBx.active .content{
+    height: 150px;
+    padding: 10px;
+}
+
+/*footer*/
+
+#footer{
+    background-color: black;
+}
+
+.span-parag,
+.text-reset i,
+.text-uppercase,
+.text-uppercase-parag,
+.product-text,
+.contact-text,
+.copy-text
+{
+    color: white;
+}
+
+.product-text,
+.useful-links{
+    text-decoration: none;
+    color: white;
+}
+
+.product-text:hover,
+.useful-links:hover{
+    color: rgb(214, 208, 208);
+}
